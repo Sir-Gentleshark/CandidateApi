@@ -16,7 +16,7 @@ namespace Application.Features.CandidateRequests.Handlers.Create
 
         public async Task<CandidateRequest> Handle(AddCandidateRequestCommand request, CancellationToken cancellationToken)
         {
-            return await _requestService.CreateRequestAsync(request.category, cancellationToken);
+            return await _requestService.CreateRequestAsync(request.CandidateRequest, cancellationToken);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Domain.Entitites.CandidateRequests;
 using Domain.Entitites.Managers;
-using Domain.Entitites.Products;
+using Domain.Entitites.Departments;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Serilog;

@@ -3,5 +3,5 @@ using MediatR;
 
 namespace Application.Features.CandidateRequests.Commands
 {
-    public record AddCandidateRequestCommand(CandidateRequest category) : IRequest<CandidateRequest>;
+    public record AddCandidateRequestCommand(CandidateRequest CandidateRequest) : IRequest<CandidateRequest>;
 }

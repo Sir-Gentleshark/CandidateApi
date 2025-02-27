@@ -3,20 +3,20 @@ using Application.Services.CandidateRequests;
 using Domain.Entitites.CandidateRequests;
 using MediatR;
 
-namespace Application.Features.Categories.Handlers.Update
+namespace Application.Features.CandidateRequests.Handlers.Update
 {
     public class UpdateCandidateRequestHandler : IRequestHandler<UpdateCandidateRequestCommand, CandidateRequest>
     {
         private readonly ICandidateRequestService _requestService;
 
-        public UpdateCandidateRequestHandler(ICandidateRequestService categories)
+        public UpdateCandidateRequestHandler(ICandidateRequestService candidateRequest)
         {
-            _requestService = categories;
+            _requestService = candidateRequest;
         }
 
         public async Task<CandidateRequest> Handle(UpdateCandidateRequestCommand request, CancellationToken cancellationToken)
         {
-            return await _requestService.UpdateRequestAsync(request.CandidateRequest, cancellationToken);
+            return await _requestService.UpdateRequestAsync(request.candidateRequest, cancellationToken);
         }
     }
 }

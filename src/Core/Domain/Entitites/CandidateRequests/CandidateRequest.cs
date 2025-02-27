@@ -7,7 +7,7 @@ namespace Domain.Entitites.CandidateRequests;
         public string Name {  get; set; } = string.Empty;
         public string Position { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public Status Status { get; set; } = Status.Submitted;
+        public Status status { get; set; } = Status.Submitted;
 
         // Relationship
         public Guid ManagerId { get; set; }
